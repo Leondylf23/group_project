@@ -18,6 +18,7 @@ import "./index.css";
 import Detail from "./pages/Detail";
 import LoadingContainer from "./components/LoadingContainer";
 
+
 // const router = createBrowserRouter([
 //   {
 //     path: "/",

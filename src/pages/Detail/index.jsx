@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Box,
   Button,
@@ -13,16 +13,25 @@ import {
 import classes from "./style.module.scss";
 import { callApiLocal } from "../../domain/api";
 import NoteModal from "../../components/NoteModal";
+import { useMainContext } from "../../components/MainContext";
 
 const Detail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const { mainData } = useMainContext();
 
   const [noteDetail, setNoteDetail] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const deleteNoteHandler = (id) => {
-    console.log("Delete", id);
+  const deleteNoteHandler = async (id) => {
+    try {
+      await callApiLocal(`/brief_notes/${id}`, "DELETE");
+      console.log("Success delete notes with id of", id);
+      navigate("/");
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   const editNoteHandler = (id) => {
@@ -36,9 +45,9 @@ const Detail = () => {
     const getNotesDetail = async () => {
       setIsLoading(true);
       try {
-        const response = await callApiLocal(`/brief_notes?id=${id}`, "GET");
+        const response = await callApiLocal(`/brief_notes/${id}`, "GET");
 
-        setNoteDetail(response);
+        setNoteDetail([response]);
       } catch (err) {
         console.log(err.message);
       }
@@ -48,11 +57,15 @@ const Detail = () => {
     getNotesDetail();
   }, [id]);
 
+  // useEffect(() => {
+  //   if (mainData?.id !== noteDetail[0]?.user_id) navigate("/");
+  // }, [mainData, noteDetail]);
+
   return (
     <Container className={classes.container}>
       {!isLoading ? (
-        noteDetail.length > 0 ? (
-          noteDetail.map((data) => {
+        noteDetail?.length > 0 ? (
+          noteDetail?.map((data) => {
             const time = new Date(data.created_date).toLocaleTimeString();
             const date = new Date(data.created_date).toDateString("en-GB");
             return (

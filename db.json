@@ -19,21 +19,13 @@
       "name": "ini name"
     },
     {
-      "id": "fec3",
-      "email": "coba@gmail.com",
-      "password": "coba123",
-      "name": "coba123"
+      "id": "acb2",
+      "email": "adwasd@aawdas.awdw",
+      "password": "aaa123",
+      "name": "wadwdwas"
     }
   ],
   "brief_notes": [
-    {
-      "id": "1",
-      "user_id": "1",
-      "title": "test brief (test change title)",
-      "content": "Ltestttttorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
-      "category": "family",
-      "created_date": "2024-01-19T08:17:40.742Z"
-    },
     {
       "id": "2",
       "user_id": "1",
@@ -49,19 +41,6 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
       "category": "personal",
       "created_date": "2023-01-01T00:00:00"
-    },
-    {
-      "id": "8add57de-a009-48bc-8d3e-eb6dc95fcf2a",
-      "user_id": "1",
-      "title": "notes 1",
-      "content": "this is a  notesss",
-      "category": "family"
-    },
-    {
-      "id": "3baf13fb-2e39-491c-9d5d-3ef35e7d8e1c",
-      "user_id": "1",
-      "title": "testing",
-      "content": "2323"
     },
     {
       "id": "02e9d03c-4b84-4540-8bdf-6c2cb4545e9b",
@@ -102,14 +81,6 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
       "category": "work",
       "created_date": "2024-01-19T08:06:03.292Z"
-    },
-    {
-      "id": "c7e2ecfd-471e-4040-9f9b-b87435d43955",
-      "user_id": "1",
-      "title": "coa",
-      "content": "cobain",
-      "category": "personal",
-      "created_date": "2024-01-19T08:57:21.999Z"
     }
   ]
 }
