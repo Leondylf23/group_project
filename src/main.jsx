@@ -17,8 +17,7 @@ import { MainContext } from "./components/MainContext";
 import "./index.css";
 import Detail from "./pages/Detail";
 import LoadingContainer from "./components/LoadingContainer";
-import { AlertPopup } from "./components/AlertPopup";
-import Login from "./pages/Login";
+
 
 // const router = createBrowserRouter([
 //   {
