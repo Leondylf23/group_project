@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Box,
   Button,
@@ -16,13 +16,20 @@ import NoteModal from "../../components/NoteModal";
 
 const Detail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [noteDetail, setNoteDetail] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const deleteNoteHandler = (id) => {
-    console.log("Delete", id);
+  const deleteNoteHandler = async (id) => {
+    try {
+      await callApiLocal(`/brief_notes/${id}`, "DELETE");
+      console.log("Success delete notes with id of", id);
+      navigate("/");
+    } catch (err) {
+      console.log(err.message);
+    }
   };
 
   const editNoteHandler = (id) => {
