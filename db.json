@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
+  ],
+  "brief_notes": [
+    {
+      "id": "",
+      "user_id": "",
+      "title": "",
+      "content": ""
+    }
+  ]
+}
