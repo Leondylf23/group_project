@@ -67,6 +67,8 @@ export default function Home({ category }) {
 
   const handleSearch = async () => {
     try {
+      setSearchParams({ title: title });
+
       const response = await callApiLocal(
         `/brief_notes`,
         "GET",
