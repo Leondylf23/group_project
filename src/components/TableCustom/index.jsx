@@ -65,17 +65,12 @@ export default function TableCustom({ head, data, action }) {
               <StyledTableCell>
                 <Box className={classes["action-wrapper"]}>
                   {/* redirect to detail page */}
-                  <Link>
+                  <Link to={`/${item.id}`}>
                     <Button size="small" variant="outlined">
                       DETAIL
                     </Button>
                   </Link>
                   {/* action pop up delete */}
-                  <Box>
-                    <Button size="small" variant="outlined">
-                      DELETE
-                    </Button>
-                  </Box>
                 </Box>
               </StyledTableCell>
             </StyledTableRow>

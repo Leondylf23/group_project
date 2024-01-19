@@ -1,0 +1,98 @@
+@import "../../style/base.scss";
+
+.container {
+  margin-top: 5rem;
+  padding: 3rem;
+
+  .container__inner {
+    padding: 1rem 3rem 3rem;
+    border-radius: 10px;
+
+    @include media-screen-sm {
+      padding: 1rem 2rem 3rem;
+    }
+
+    @include media-screen-xs {
+      padding: 1rem 1.5rem 3rem;
+    }
+
+    .title_wrapper {
+      @include container-x;
+      align-items: center;
+
+      .title {
+        @include font(50px, $font-bold);
+
+        @include media-screen-sm {
+          @include font(40px, $font-bold);
+        }
+
+        @include media-screen-xs {
+          @include font($font-size-3xl, $font-bold);
+        }
+      }
+
+      .chip {
+        margin-left: 0.8rem;
+        border-color: white;
+      }
+    }
+
+    .date {
+      @include font($font-size-md, $font-normal);
+
+      @include media-screen-sm {
+        @include font($font-size-sm, $font-bold);
+      }
+
+      @include media-screen-xs {
+        @include font(10px, $font-bold);
+      }
+    }
+
+    .content {
+      @include font($font-size-lg, $font-normal);
+      margin-top: 3rem;
+
+      @include media-screen-sm {
+        margin-top: 2rem;
+        @include font($font-size-md, $font-bold);
+      }
+
+      @include media-screen-xs {
+        margin-top: 1.5rem;
+        @include font(14px, $font-bold);
+      }
+    }
+
+    .btn_wrapper {
+      @include container-x;
+      margin-top: 2rem;
+      justify-content: end;
+
+      button {
+        padding: 0.4rem 2rem;
+      }
+
+      .btn_edit {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .work {
+    background-color: $category-work;
+  }
+
+  .family {
+    background-color: $category-family;
+  }
+
+  .personal {
+    background-color: $category-personal;
+  }
+
+  .text_not_found {
+    text-align: center;
+  }
+}
