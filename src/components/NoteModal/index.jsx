@@ -15,8 +15,11 @@ import {
 
 import classes from "./style.module.scss";
 import { callApiLocal } from "../../domain/api";
+import { useMainContext } from "../MainContext";
 
 const NoteModal = ({ isOpen, setIsOpen, editId = null }) => {
+  const { mainData } = useMainContext();
+
   const [noteInput, setNoteInput] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
@@ -28,10 +31,9 @@ const NoteModal = ({ isOpen, setIsOpen, editId = null }) => {
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    // TODO: Get Logged user_id
     const data = {
       id: uuidv4(),
-      user_id: "1",
+      user_id: mainData.id,
       title: noteInput.title,
       content: noteInput.content,
       category: noteInput.category,

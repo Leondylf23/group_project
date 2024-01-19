@@ -43,9 +43,9 @@ const Detail = () => {
     const getNotesDetail = async () => {
       setIsLoading(true);
       try {
-        const response = await callApiLocal(`/brief_notes?id=${id}`, "GET");
+        const response = await callApiLocal(`/brief_notes/${id}`, "GET");
 
-        setNoteDetail(response);
+        setNoteDetail([response]);
       } catch (err) {
         console.log(err.message);
       }
@@ -58,8 +58,8 @@ const Detail = () => {
   return (
     <Container className={classes.container}>
       {!isLoading ? (
-        noteDetail.length > 0 ? (
-          noteDetail.map((data) => {
+        noteDetail?.length > 0 ? (
+          noteDetail?.map((data) => {
             const time = new Date(data.created_date).toLocaleTimeString();
             const date = new Date(data.created_date).toDateString("en-GB");
             return (
