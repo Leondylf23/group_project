@@ -9,7 +9,9 @@ import {
 import ReactDOM from "react-dom/client";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import NavBar from "./components/Navbar";
+import { AlertPopup } from "./components/AlertPopup";
 import { MainContext } from "./components/MainContext";
 
 import "./index.css";
