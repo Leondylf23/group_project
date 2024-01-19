@@ -1,18 +1,18 @@
 {
   "users": [
     {
-      "id": "",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "1",
+      "name": "test",
+      "email": "test@example.com",
+      "password": "testing"
     }
   ],
   "brief_notes": [
     {
-      "id": "",
-      "user_id": "",
-      "title": "",
-      "content": ""
+      "id": "1",
+      "user_id": "1",
+      "title": "test note",
+      "content": "ini test note"
     }
   ]
 }
