@@ -65,10 +65,6 @@ export default function Home({ category }) {
 
   const handleSearch = async () => {
     try {
-      if (filterCategory === "") {
-        fetchData();
-      }
-
       const response = await callApiLocal(
         `/brief_notes`,
         "GET",
