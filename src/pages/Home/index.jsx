@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Button } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
-import LoadingContainer from "../../components/LoadingContainer";
+
 import classes from "./style.module.scss";
+import NoteModal from "../../components/NoteModal";
+import LoadingContainer from "../../components/LoadingContainer";
 
 export default function Home({ category }) {
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openCreateNewModal = () => {
+    setIsModalOpen(true);
+  };
 
   return (
     <div className={classes.mainContainer}>
@@ -19,7 +26,12 @@ export default function Home({ category }) {
           Create New
         </Button>
       </div>
+
       {isLoading ? <LoadingContainer isFullHeight={true} /> : <h1>test</h1>}
+
+      {isModalOpen && (
+        <NoteModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      )}
     </div>
   );
 }
