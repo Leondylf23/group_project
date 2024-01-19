@@ -42,10 +42,11 @@ export default function RegisterComponent({ changePage }) {
             await callApiLocal("/users", "POST", {}, {}, { email: formData.email, password: formData.password, name: formData.name });
             showMessage("Registered! Please login.", "success");
             changePage();
-            setIsSendData(false);
+            
         } catch (error) {
             showMessage(error.message, "error");
         }
+        setIsSendData(false);
     }
 
     return (
