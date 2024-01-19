@@ -5,6 +5,18 @@
       "name": "test user",
       "email": "test@example.com",
       "password": "testaja"
+    },
+    {
+      "id": "2",
+      "name": "test user 2",
+      "email": "test2@example.com",
+      "password": "testaja1"
+    },
+    {
+      "id": "386b",
+      "email": "testa@ma.a",
+      "password": "inipassword",
+      "name": "ini name"
     }
   ],
   "brief_notes": [
