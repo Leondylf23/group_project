@@ -13,10 +13,12 @@ import {
 import classes from "./style.module.scss";
 import { callApiLocal } from "../../domain/api";
 import NoteModal from "../../components/NoteModal";
+import { useMainContext } from "../../components/MainContext";
 
 const Detail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { mainData } = useMainContext();
 
   const [noteDetail, setNoteDetail] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -54,6 +56,10 @@ const Detail = () => {
 
     getNotesDetail();
   }, [id]);
+
+  useEffect(() => {
+    if (mainData?.id !== noteDetail[0]?.user_id) navigate("/");
+  }, [mainData, noteDetail]);
 
   return (
     <Container className={classes.container}>
