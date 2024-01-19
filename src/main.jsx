@@ -11,12 +11,15 @@ import { AlertPopup } from "./components/AlertPopup";
 import Login from "./pages/Login";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import NavBar from "./components/Navbar";
+import { AlertPopup } from "./components/AlertPopup";
 import { MainContext } from "./components/MainContext";
 
 import "./index.css";
 import Detail from "./pages/Detail";
 import LoadingContainer from "./components/LoadingContainer";
+
 
 // const router = createBrowserRouter([
 //   {
