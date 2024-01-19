@@ -12,12 +12,14 @@ import {
 
 import classes from "./style.module.scss";
 import { callApiLocal } from "../../domain/api";
+import NoteModal from "../../components/NoteModal";
 
 const Detail = () => {
   const { id } = useParams();
 
   const [noteDetail, setNoteDetail] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const deleteNoteHandler = (id) => {
     console.log("Delete", id);
@@ -25,6 +27,7 @@ const Detail = () => {
 
   const editNoteHandler = (id) => {
     console.log("Edit", id);
+    setIsModalOpen(true);
   };
 
   useEffect(() => {
@@ -110,6 +113,14 @@ const Detail = () => {
         )
       ) : (
         <CircularProgress />
+      )}
+
+      {isModalOpen && (
+        <NoteModal
+          isOpen={isModalOpen}
+          setIsOpen={setIsModalOpen}
+          editId={id}
+        />
       )}
     </Container>
   );
