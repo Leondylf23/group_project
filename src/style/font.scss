@@ -1,7 +1,9 @@
 @import "./colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap");
 
 // Fonts
 $font-family: "Roboto", sans-serif;
+$font-primary: "Jost", sans-serif;
 
 // Sizes
 $font-size-xs: 8px;
@@ -19,8 +21,8 @@ $font-normal: 500;
 $font-thin: 200;
 
 @mixin font($size, $weight) {
-    font-size: $size;
-    font-weight: $weight;
-    font-family: $font-family;
-    color: $text-color !important;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $font-family;
+  color: $text-color !important;
 }

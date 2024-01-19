@@ -1,0 +1,54 @@
+@import "../../style/base.scss";
+
+.container {
+  @include container-x;
+  justify-content: center;
+  align-items: center;
+
+  .container__inner {
+    border-radius: 10px;
+    width: 50%;
+    position: absolute;
+    padding: 2rem;
+    background-color: white; // TODO: Change Background Color
+    border: 1px solid black;
+
+    @include media-screen-lg {
+      width: 60%;
+    }
+
+    @include media-screen-md {
+      width: 70%;
+    }
+
+    @include media-screen-xs {
+      width: 80%;
+    }
+
+    .form_header {
+      @include font($font-size-3xl, $font-normal);
+
+      @include media-screen-xs {
+        @include font($font-size-xl, $font-normal);
+      }
+    }
+
+    .input_wrapper {
+      margin-top: 1rem;
+
+      .input_select {
+        width: 100%;
+      }
+    }
+
+    .btn_wrapper {
+      @include container-x;
+      margin-top: 2rem;
+      justify-content: end;
+
+      .btn_submit {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

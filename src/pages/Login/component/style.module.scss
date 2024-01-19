@@ -1,0 +1,35 @@
+@import "../../../style/base.scss";
+
+.innerContainer {
+    @include padding(20px !important);
+
+    background-color: $background-color;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: $shadow-black;
+
+    .title {
+        @include font($font-size-xl, $font-bold);
+    }
+    .formFields {
+        @include container-y;
+        
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+
+        .field {
+            width: 100%;
+        }
+    }
+    .link {
+        @include font($font-size-md, $font-normal);
+        @include padding-y (5px);
+
+        color: #979797 !important;
+        cursor: pointer;
+    }
+    .button {
+        margin-top: 10px;
+    }
+}
