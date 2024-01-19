@@ -44,6 +44,7 @@ export default function LoginComponent({changePage}) {
         } catch (error) {
             showMessage(error.message, "error");
         }
+        setIsSendingData(false);
     }
 
     return (
