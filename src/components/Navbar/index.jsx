@@ -68,7 +68,7 @@ export default function NavBar() {
                             <ListItemText primary={"Home"} className={classes.text} />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding className={classes.swipeMenuChildren + " " + ((page === "Home") ? classes.swipeMenuChildrenActive : "")}>
+                    <ListItem disablePadding className={classes.swipeMenuChildren}>
                         <ListItemButton className={classes.swipeMenuButton} onClick={() => logout()}>
                             <ListItemIcon>
                                 <div className={classes.icon}>

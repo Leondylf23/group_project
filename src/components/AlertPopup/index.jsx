@@ -13,7 +13,7 @@ function AlertPopup({children}) {
     const [timeoutId, setTimeoutId] = useState(null);
 
     function* animateAlert(msg, type) {
-        setAlertComp(<Alert severity={type}>{msg}</Alert>);
+        setAlertComp(<Alert severity={type} variant="filled" sx={{zIndex: 100}} className={classes.btm}>{msg}</Alert>);
 
         yield;
 

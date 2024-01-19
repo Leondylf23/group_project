@@ -57,9 +57,9 @@ const Detail = () => {
     getNotesDetail();
   }, [id]);
 
-  useEffect(() => {
-    if (mainData?.id !== noteDetail[0]?.user_id) navigate("/");
-  }, [mainData, noteDetail]);
+  // useEffect(() => {
+  //   if (mainData?.id !== noteDetail[0]?.user_id) navigate("/");
+  // }, [mainData, noteDetail]);
 
   return (
     <Container className={classes.container}>

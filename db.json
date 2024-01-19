@@ -17,6 +17,12 @@
       "email": "testa@ma.a",
       "password": "inipassword",
       "name": "ini name"
+    },
+    {
+      "id": "acb2",
+      "email": "adwasd@aawdas.awdw",
+      "password": "aaa123",
+      "name": "wadwdwas"
     }
   ],
   "brief_notes": [
@@ -35,19 +41,6 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
       "category": "personal",
       "created_date": "2023-01-01T00:00:00"
-    },
-    {
-      "id": "8add57de-a009-48bc-8d3e-eb6dc95fcf2a",
-      "user_id": "1",
-      "title": "notes 1",
-      "content": "this is a  notesss",
-      "category": "family"
-    },
-    {
-      "id": "3baf13fb-2e39-491c-9d5d-3ef35e7d8e1c",
-      "user_id": "1",
-      "title": "testing",
-      "content": "2323"
     },
     {
       "id": "02e9d03c-4b84-4540-8bdf-6c2cb4545e9b",

@@ -3,14 +3,17 @@
 .alertPopup {
     @include container-items-center;
     
-    position: fixed;
-    top: 100%;
+    position: flex;
+    bottom: 0;
     left: 0;
     pointer-events: none;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
     translate: 0 -20%;
+}
+.btm {
+    bottom: 0;
 }
 .alertPopupShow {
     translate: 0 0;
