@@ -1,0 +1,64 @@
+@import "../../style/base.scss";
+
+.container {
+  margin-top: 5rem;
+  padding: 3rem;
+
+  .container__inner {
+    padding: 1rem 3rem 3rem;
+    border-radius: 10px;
+
+    .title_wrapper {
+      @include container-x;
+      align-items: center;
+
+      .title {
+        @include font(50px, $font-bold);
+      }
+
+      .chip {
+        margin-left: 0.8rem;
+        border-color: white
+      }
+    }
+
+    .date {
+      @include font($font-size-md, $font-normal);
+    }
+
+    .content {
+      @include font($font-size-lg, $font-normal);
+      margin-top: 3rem;
+    }
+
+    .btn_wrapper{
+        @include container-x;
+        margin-top: 2rem;
+        justify-content: end;
+
+        button{
+            padding: .4rem 2rem;
+        }
+
+        .btn_edit{
+            margin-left: 1rem;
+        }
+    }
+  }
+
+  .work{
+    background-color: $category-work;
+  }
+
+  .family{
+    background-color: $category-family;
+  }
+
+  .personal{
+    background-color: $category-personal;
+  }
+
+  .text_not_found{
+    text-align: center;
+  }
+}
