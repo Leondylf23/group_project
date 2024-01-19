@@ -29,7 +29,6 @@ export default function Home({ category }) {
   const filterCategory = searchParams.get("category");
   const { setPage } = useMainContext();
   const { mainData } = useMainContext();
-  const { showMessage } = useMessage();
 
   const fetchData = async () => {
     try {
@@ -68,7 +67,6 @@ export default function Home({ category }) {
     try {
       if (filterCategory === "") {
         fetchData();
-        cat = filterCategory;
       }
 
       const response = await callApiLocal(
