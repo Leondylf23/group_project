@@ -7,6 +7,8 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 import ReactDOM from "react-dom/client";
+import { AlertPopup } from "./components/AlertPopup";
+import Login from "./pages/Login";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";

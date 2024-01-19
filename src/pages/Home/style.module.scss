@@ -1,21 +1,44 @@
 @import "../../style/base.scss";
 
 @include main-container {
-    .createBtnContainer {
-        @include container-x;
-        
-        width: 100%;
-        justify-content: end;
-        margin-bottom: 20px;
-    }
-    .buttonContainer {
-        @include container-x;
+  .createBtnContainer {
+    @include container-x;
 
-        justify-content: center;
-        gap: 20px;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 20px;
+  }
+  .buttonContainer {
+    @include container-x;
 
+    justify-content: center;
+    gap: 20px;
+  }
+  .button {
+    @include button;
+  }
+
+  .tableContainer {
+    width: 100%;
+  }
+
+  .headerAction {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    @include media-screen-xs {
+      @include container-y;
+      align-items: end;
     }
-    .button {
-        @include button;
-    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
