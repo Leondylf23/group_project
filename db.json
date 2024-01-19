@@ -94,6 +94,14 @@
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
       "category": "work",
       "created_date": "2024-01-19T08:06:03.292Z"
+    },
+    {
+      "id": "7bcfba2a-7c75-4e12-bd79-b1e7444161ae",
+      "user_id": "f92e",
+      "title": "test notes",
+      "content": "aaaa",
+      "category": "personal",
+      "created_date": "2024-01-19T09:30:15.786Z"
     }
   ]
 }
