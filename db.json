@@ -1,20 +1,20 @@
 {
   "users": [
     {
-      "id": "",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "1",
+      "name": "test user",
+      "email": "test@example.com",
+      "password": "testaja"
     }
   ],
   "brief_notes": [
     {
-      "id": "",
-      "user_id": "",
-      "title": "",
-      "content": "",
-      "category": "",
-      "created_date": ""
+      "id": "1",
+      "user_id": "1",
+      "title": "test brief",
+      "content": "ini test brief",
+      "category": "work",
+      "created_date": "2023-01-01T00:00:00"
     }
   ]
 }
