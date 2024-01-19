@@ -6,7 +6,6 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useNavigate, useParams } from "react-router-dom";
 import SaveIcon from '@mui/icons-material/Save';
 
-import { categoryList, emptyForm } from "../../constants";
 import { callApiLocal } from "../../domain/api";
 import LoadingContainer from "../../components/LoadingContainer";
 
@@ -16,7 +15,7 @@ const defaultValueFields = { provider: false, email: false, password: false, cat
 
 export default function CreatePage({ isFromDetail }) {
     const [isShowPassword, setIsShowPassword] = useState(false);
-    const [formData, setFormData] = useState(emptyForm);
+    const [formData, setFormData] = useState(null);
     const [errFields, setErrFields] = useState(defaultValueFields);
     const [isSaving, setIsSaving] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -187,11 +186,7 @@ export default function CreatePage({ isFromDetail }) {
                             value={formData.category}
                             onChange={(e) => setFormData(prevVal => ({ ...prevVal, category: e.target.value }))}
                         >
-                            {categoryList.map((option) => (
-                                <MenuItem key={option.id} value={option.id}>
-                                    {option.name}
-                                </MenuItem>
-                            ))}
+                            
                         </TextField>
                     </div>
                     <div className={classes.buttonContainer}>
