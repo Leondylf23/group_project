@@ -26,6 +26,8 @@ export default function Home({ category }) {
 
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const { showMessage } = useMessage();
+
   const filterCategory = searchParams.get("category");
   const { setPage } = useMainContext();
   const { mainData } = useMainContext();
@@ -40,7 +42,7 @@ export default function Home({ category }) {
       );
       setDatas(response);
     } catch (error) {
-      console.log(error);
+      showMessage("failed catch data", "warning");
     }
   };
 
@@ -59,7 +61,7 @@ export default function Home({ category }) {
       );
       setDatas(response);
     } catch (error) {
-      console.log(error);
+      showMessage("failed catch category", "warning");
     }
   };
 
@@ -73,7 +75,7 @@ export default function Home({ category }) {
       );
       setDatas(response);
     } catch (error) {
-      console.log(error);
+      showMessage("failed catch data search", "warning");
     }
   };
 
