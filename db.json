@@ -17,17 +17,15 @@
       "email": "testa@ma.a",
       "password": "inipassword",
       "name": "ini name"
+    },
+    {
+      "id": "f92e",
+      "email": "fahmi@gmail.com",
+      "password": "123123",
+      "name": "fahmi"
     }
   ],
   "brief_notes": [
-    {
-      "id": "1",
-      "user_id": "1",
-      "title": "test brief (test change title)",
-      "content": "Ltestttttorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar tellus et dui tristique tempus. Pellentesque in neque nec sapien rutrum dictum. Cras turpis ante, congue at tellus quis, cursus posuere ex. Quisque posuere lobortis tempus. Curabitur nunc purus, mollis eleifend arcu nec, pellentesque interdum erat. Morbi sapien nisl, tempus ut sem sed, varius pharetra tellus. Sed et risus vel libero tincidunt aliquet id vel augue. Etiam tempus justo dignissim urna molestie, et rutrum tortor accumsan. Nullam ultricies id libero eu auctor. Proin a ornare sapien. Cras eu nisl leo.",
-      "category": "family",
-      "created_date": "2024-01-19T08:17:40.742Z"
-    },
     {
       "id": "2",
       "user_id": "1",
