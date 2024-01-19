@@ -7,14 +7,30 @@
 
   .container__inner {
     border-radius: 10px;
-    width: 500px;
+    width: 50%;
     position: absolute;
     padding: 2rem;
     background-color: white; // TODO: Change Background Color
     border: 1px solid black;
 
+    @include media-screen-lg {
+      width: 60%;
+    }
+
+    @include media-screen-md {
+      width: 70%;
+    }
+
+    @include media-screen-xs {
+      width: 80%;
+    }
+
     .form_header {
       @include font($font-size-3xl, $font-normal);
+
+      @include media-screen-xs {
+        @include font($font-size-xl, $font-normal);
+      }
     }
 
     .input_wrapper {
